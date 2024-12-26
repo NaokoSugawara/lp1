@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* header */
+
+.header {
+  margin-left: 360px;
+  margin-right: 360px;
+}
+
+.company-name {
+  color: #005BAC;
+  font-size: 32px;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+}
+
+.setsumeikai-moushikomi {
+  width: 282px;
+  height: 61px;
+  border-radius: 9999px;
+  border: none;
+  background: linear-gradient(to right, #0271E0, #53A2F0);
+  color: white;
+}
+
+/* font */
+.noto-sans-jp-medium {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.noto-sans-jp-bold {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
