@@ -2,17 +2,17 @@
 
 /* header */
 
-.header {
+/* .header {
   margin-left: 360px;
   margin-right: 360px;
-}
+} */
 
 .company-name {
   color: #005BAC;
   font-size: 32px;
 }
 
-li {
+.li-horizontal {
   display: inline-block;
   list-style: none;
 }
@@ -25,6 +25,37 @@ li {
   background: linear-gradient(to right, #0271E0, #53A2F0);
   color: white;
 }
+
+/* main */
+.row {
+  display:flex;
+  flex-direction: row;
+}
+
+.column {
+  display:flex;
+  flex-direction: column;
+}
+
+.feathers {
+  width: 52.6px;
+  height: auto;
+}
+
+.no1 {
+  font-size: 54px;
+  margin: 0 auto;
+  color: #F11F8D;
+}
+
+.horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+/* p {
+  text-align: center;
+} */
 
 /* font */
 .noto-sans-jp-medium {
