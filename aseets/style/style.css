@@ -40,7 +40,7 @@
   height: 45px;
 }
 
-.moushikomu {
+.setsumeikai {
   width: 282px;
   height: 61px;
   border-radius: 9999px;
@@ -50,8 +50,8 @@
   color: white;
 }
 
-/* main */
 
+/* main */
 /* upper */
 .upper {
   position: relative;
@@ -92,6 +92,45 @@
   color: #005BAC;
 }
 
+.otoiawase {
+  width: 340px;
+  height: 75px;
+  border-radius: 9999px;
+  border: none;
+  background: #77CB33;
+  font-size: 24px;
+  color: white;
+}
+
+.muryoutaiken {
+  width: 340px;
+  height: 75px;
+  border-radius: 9999px;
+  border: none;
+  background: #F6AA00;
+  font-size: 24px;
+  color: white;
+}
+
+.shiryouseikyu {
+  width: 340px;
+  height: 75px;
+  border-radius: 9999px;
+  border: none;
+  background: #3AC8AD;
+  font-size: 24px;
+  color: white;
+}
+
+.buttons {
+  position: absolute;
+  bottom: -37.5px;
+  left: 410px;
+}
+
+.li-button {
+  margin-right: 40px;
+}
 
 
 /* 汎用 */
