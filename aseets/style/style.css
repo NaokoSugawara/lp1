@@ -1,32 +1,88 @@
 @charset "UTF-8";
 
-/* header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* .header {
-  margin-left: 360px;
-  margin-right: 360px;
-} */
+
+/* header */
+.header {
+  width: 1920px;
+  height: 101px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 360px;
+  overflow: hidden; /* Prevents margin collapse */
+}
+
+.header-content-inner{
+  margin-left: 158px;
+  /* margin-right: 48px; */
+}
+
+.header-content-inner-li {
+  font-size: 20px;
+}
+
+.margin-r {
+  margin-right: 48px;
+}
 
 .company-name {
   color: #005BAC;
   font-size: 32px;
+  /* width: 241px; */
+  width: 261px;
+  height: 45px;
 }
 
-.li-horizontal {
-  display: inline-block;
-  list-style: none;
-}
-
-.setsumeikai-moushikomi {
+.moushikomu {
   width: 282px;
   height: 61px;
   border-radius: 9999px;
   border: none;
   background: linear-gradient(to right, #0271E0, #53A2F0);
+  font-size: 20px;
   color: white;
 }
 
 /* main */
+.feathers {
+  width: 52.6px;
+  height: auto;
+}
+
+.jisseki {
+  font-size: 20px;
+}
+
+.no1 {
+  font-size: 54px;
+  margin: 0 auto;
+  color: #F11F8D;
+}
+
+.geneki {
+  font-size: 33px;
+}
+
+.kaishi {
+  font-size: 60px;
+  color: #005BAC;
+}
+
+
+
+/* 汎用 */
+.li-horizontal {
+  display: inline-block;
+  list-style: none;
+}
+
 .row {
   display:flex;
   flex-direction: row;
@@ -35,17 +91,6 @@
 .column {
   display:flex;
   flex-direction: column;
-}
-
-.feathers {
-  width: 52.6px;
-  height: auto;
-}
-
-.no1 {
-  font-size: 54px;
-  margin: 0 auto;
-  color: #F11F8D;
 }
 
 .horizontal-center {
@@ -57,13 +102,21 @@
   text-align: center;
 } */
 
+
+
 /* font */
+.noto-sans-jp-regular {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .noto-sans-jp-medium {
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
 }
 
 .noto-sans-jp-bold {
@@ -71,7 +124,13 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 20px;
+}
+
+.noto-sans-jp-black {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .poppins-regular {
