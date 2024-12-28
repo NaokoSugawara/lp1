@@ -51,6 +51,23 @@
 }
 
 /* main */
+
+/* upper */
+.upper {
+  position: relative;
+}
+
+.upper-left {
+  position: absolute;
+  top: 0;
+  left: 410px;
+}
+
+.goukaku-jisseki {
+  margin-top: 105px;
+  margin-bottom: 32px;
+}
+
 .feathers {
   width: 52.6px;
   height: auto;
