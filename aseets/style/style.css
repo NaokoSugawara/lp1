@@ -18,21 +18,8 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 20px 360px;
+  padding: 20px;
   overflow: hidden; /* Prevents margin collapse */
-}
-
-.header-content-inner{
-  margin-left: 158px;
-  /* margin-right: 48px; */
-}
-
-.header-content-inner-li {
-  font-size: 20px;
-}
-
-.margin-r {
-  margin-right: 48px;
 }
 
 .company-name {
@@ -41,6 +28,18 @@ html {
   /* width: 241px; */
   width: 261px;
   height: 45px;
+}
+
+.header-content-inner{
+  margin-left: 158px;
+}
+
+.header-content-inner-li {
+  font-size: 20px;
+}
+
+.header-content-inner>li:not(:nth-child(4)){
+  margin-right: 48px;
 }
 
 .setsumeikai {
@@ -175,13 +174,52 @@ html {
   justify-content: space-between;
 }
 
-/* .reasons p {
-  display: inline-block;
-} */
-
 .second-boxes {
   margin-top: 48px;
   margin-bottom: 48px;
+}
+
+.points {
+  font-size: 18px;
+}
+
+.numbers {
+  font-size: 28px;
+}
+
+.points, .numbers {
+  color: #F11F8D;
+}
+
+.summaries {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+
+/* obi */
+.obi {
+  width: 100%;
+  height: 231px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.obi p:first-child {
+  padding-top: 56px;
+}
+
+.obi p:nth-child(2) {
+  padding-top: 20px;
+}
+
+.setsumeikai2 {
+  width: 360px;
+  height: 75px;
+  font-size: 24px;
 }
 
 
@@ -206,22 +244,7 @@ html {
   justify-content: center;
 }
 
-.points {
-  font-size: 18px;
-}
 
-.numbers {
-  font-size: 28px;
-}
-
-.points, .numbers {
-  color: #F11F8D;
-}
-
-.summaries {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
 
 
 /* font */
