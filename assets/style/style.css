@@ -9,7 +9,8 @@
 }
 
 html {
-  width: 1920px;
+  /* width: 1920px; */
+  scroll-behavior: smooth;
 }
 
 /* header */
@@ -54,6 +55,9 @@ html {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* main */
 /* upper */
@@ -144,14 +148,14 @@ html {
 }
 
 
-/* 3 reasons */
-.middle {
-  margin-left: 360px;
-  margin-right: 360px;
+/* three reasons */
+.three-reasons {
+  width: 1160px;
+  margin: 0 auto; /* Center horizontally */
   overflow: hidden; /* Prevents margin collapse */
 }
 
-.middle-boxes {
+.three-reasons-boxes {
   width: 560px;
   height: 346px;
 }
@@ -233,8 +237,7 @@ html {
 .courses-purposes {
   width: 1160px;
   height: 927px;
-  margin-left: 380px;
-  margin-right: 380px;
+  margin: 0 auto; /* Center horizontally */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -332,6 +335,45 @@ html {
   font-size: 20px;
   text-align: left;
 }
+
+
+/* tuitions */
+.tuitions {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 600px;
+  height: 545px;
+  border-collapse:  collapse;
+  border: solid 4px #CCCCCC;
+}
+
+td {
+  height: 74px;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 1px #CCCCCC;
+}
+
+.price {
+  font-size: 32px;
+  color: #F11F8D;
+}
+
+td:nth-child(odd), .second-td {
+  font-size: 18px;
+}
+
+.first-td, .second-td {
+  background-color: #F5F5F5;
+}
+
+
+
+
 
 
 
