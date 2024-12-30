@@ -16,8 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="aseets/style/style.css">
-    <link href="https://fonts.google.com/noto/specimen/Noto+Sans+JP">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- <link href="https://fonts.google.com/noto/specimen/Noto+Sans+JP"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src="assets\script\script.js" defer></script>
+
     <title>入学説明会のお申し込み開始 | Kira-Kira Juku</title>
 </head>
 <body>
@@ -35,15 +39,15 @@
     <!-- main -->
         <!-- Top Left -->
         <section class="upper">
-            <img src="aseets\image\mainVIsual_pc.jpg.png" alt="">
+            <img src="assets\image\mainVIsual_pc.jpg" alt="">
             <div class="upper-left">
                 <div class="goukaku-jisseki row">
-                    <div><img class="feathers" src="aseets/image/frame-left.png" alt=""></div>
-                    <div class="column horizontal-center">
+                    <div><img class="feathers" src="assets/image/frame-left.png" alt=""></div>
+                    <div class="jisseki-column horizontal-center">
                         <div class="noto-sans-jp-medium jisseki">難関大学の合格実績</div>
                         <div class="poppins-extrabold-italic no1"><span class="no">No.</span>1</div>
                     </div>
-                    <div><img class="feathers" src="aseets/image/frame-right.png" alt=""></div>
+                    <div><img class="feathers" src="assets/image/frame-right.png" alt=""></div>
                 </div>
                 <p class="noto-sans-jp-regular geneki">現役高校生・高卒生</p>
                 <p class="noto-sans-jp-black kaishi">入学説明会の</p>
@@ -57,10 +61,10 @@
         </section>
 
         <!-- middle -->
-        <p class="noto-sans-jp-bold erabareru">選ばれる<span class="san">3</span>つの理由</p>
+        <p class="noto-sans-jp-bold subjects">選ばれる<span class="san">3</span>つの理由</p>
         <section class="middle">
             <div class="reasons">
-                <img class="middle-boxes" src="aseets\image\pht_reason01.jpg.png" alt="">
+                <img class="middle-boxes" src="assets\image\pht_reason01.jpg" alt="">
                 <div class="middle-boxes">
                     <p class="poppins-bold-italic points">Point <span class="numbers">1</span></p>
                     <p class="noto-sans-jp-bold summaries">実績のある講師陣だから安心</p>
@@ -73,10 +77,10 @@
                     <p class="noto-sans-jp-bold summaries">オンラインにも対応だから、早送り巻き戻し視聴できる。</p>
                     <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </div>
-                <img class="middle-boxes" src="aseets\image\pht_reason02.jpg.png" alt="">
+                <img class="middle-boxes" src="assets\image\pht_reason02.jpg" alt="">
             </div>
             <div class="reasons">
-                <img class="middle-boxes" src="aseets\image\pht_reason03.jpg.png" alt="">
+                <img class="middle-boxes" src="assets\image\pht_reason03.jpg" alt="">
                 <div class="middle-boxes">
                     <p class="poppins-bold-italic points">Point <span class="numbers">3</span></p>
                     <p class="noto-sans-jp-bold summaries">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</p>
@@ -91,8 +95,63 @@
             <p><button type="button" class="noto-sans-jp-bold setsumeikai setsumeikai2">入学説明会に申し込む</button></p>
         </section>
 
+        <!-- courses/purposes -->
+        <p class="noto-sans-jp-bold subjects">コース・目的</p>
+        <section class="courses-purposes">
+            <ul class="tabs">
+                <li class="noto-sans-jp-bold tab first-tab active" onclick="openContent(event, 'grades')">学年別から選ぶ</li>
+                <li class="noto-sans-jp-bold tab" onclick="openContent(event, 'purposes')">目的別から選ぶ</li>
+            </ul>
+            <div id="grades" class="tabcontents">
+                <div class="ichigyou first-line">
+                    <div class="cell cell-left">
+                        <img class="courses-purposes-pics" src="assets\image\pht_cource01.png" alt="">
+                        <p class="noto-sans-jp-bold">➡　高卒性</p>
+                    </div>
+                    <div class="cell cell-right">
+                        <img class="courses-purposes-pics" src="assets\image\pht_cource02.png" alt="">
+                        <p class="noto-sans-jp-bold">➡　高校3年生</p>
+                    </div>
+                </div>
+                <div class="ichigyou second-line">
+                    <div class="cell cell-left cell-bottom">
+                        <img class="courses-purposes-pics" src="assets\image\pht_cource03.png" alt="">
+                        <p class="noto-sans-jp-bold">➡　高校2年生</p>
+                    </div>
+                    <div class="cell cell-right cell-bottom">
+                        <img class="courses-purposes-pics" src="assets\image\pht_cource04.png" alt="">
+                        <p class="noto-sans-jp-bold">➡　高校1年生</p>
+                    </div>
+                </div>
+            </div>
+            <div id="purposes" class="tabcontents">
+                <div class="ichigyou first-line">
+                    <div class="cell cell-left">
+                        <img class="courses-purposes-pics" src="assets\image\pht_cource05.png" alt="">
+                        <p class="noto-sans-jp-bold">➡　難関大学・医学部合格を目指す</p>
+                    </div>
+                    <div class="cell cell-right">
+                        <img class="courses-purposes-pics" src="assets\image\pht_cource06.png" alt="">
+                        <p class="noto-sans-jp-bold">➡　名門私立大学合格を目指す</p>
+                    </div>
+                </div>
+                <div class="ichigyou second-line">
+                    <div class="cell cell-left cell-bottom">
+                        <img class="courses-purposes-pics" src="assets\image\pht_cource07.png" alt="">
+                        <p class="noto-sans-jp-bold">➡　国公立大学合格を目指す</p>
+                    </div>
+                    <div class="cell cell-right cell-bottom">
+                        <img class="courses-purposes-pics" src="assets\image\pht_cource08.png" alt="">
+                        <p class="noto-sans-jp-bold">➡　海外の大学合格を目指す</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("grades").style.display = "block";
+        });
+    </script>
 </body>
 </html>
