@@ -208,6 +208,8 @@ html {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  margin-top: 72px;
+  background-color: #FFEDED;
 }
 
 .obi p:first-child {
