@@ -60,6 +60,7 @@ a {
 }
 
 /* main */
+
 /* upper */
 .upper {
   width: 100%;
@@ -203,7 +204,6 @@ a {
 }
 
 
-
 /* obi */
 .obi {
   width: 100%;
@@ -232,7 +232,6 @@ a {
 
 
 /* courses and purposes */
-
 /* tabs */
 .courses-purposes {
   width: 1160px;
@@ -309,7 +308,7 @@ a {
 .cell {
   width: 532px;
   height: 374px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .cell-left {
@@ -326,7 +325,7 @@ a {
   margin-bottom: 32px;
 }
 
-.courses-purposes-pics {
+.cell img {
   width: 532px;
   height: 329px;
   margin-bottom: 16px;
@@ -378,7 +377,6 @@ td:nth-child(odd), .second-td {
 
 
 /* inquiries-locations */
-
 .inquiries-locations {
   width: 100%;
   display: flex;
@@ -390,6 +388,7 @@ td:nth-child(odd), .second-td {
   position: relative;
   flex: 1 1 50%; /* Each div takes up 50% of the container */
   max-width: 50%; /* Ensures no div exceeds 50% of the container */
+  overflow: hidden
 }
 
 .inquiries-locations img {
@@ -416,8 +415,15 @@ td:nth-child(odd), .second-td {
 }
 
 
-
-
+/* footer */
+footer {
+  height: 120px;
+  background-color: #FFEDED;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
