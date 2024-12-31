@@ -13,6 +13,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 /* header */
 .header {
   width: 100%;
@@ -26,23 +31,32 @@ html {
 }
 
 .company-name {
-  color: #005BAC;
   font-size: 32px;
   /* width: 241px; */
   width: 261px;
   height: 45px;
 }
 
+.company-name a {
+  color: #005BAC;
+}
+
 .header-content-inner{
   margin-left: 158px;
 }
 
-.header-content-inner-li {
+.header-content-inner li {
+  display: inline-block;
+  list-style: none;
   font-size: 20px;
 }
 
 .header-content-inner>li:not(:nth-child(4)){
   margin-right: 48px;
+}
+
+.header-content-inner a {
+  color: #333333;
 }
 
 .setsumeikai {
@@ -55,12 +69,8 @@ html {
   color: white;
 }
 
-a {
-  text-decoration: none;
-}
 
 /* main */
-
 /* upper */
 .upper {
   width: 100%;
@@ -144,8 +154,14 @@ a {
   bottom: -37.5px;
 }
 
-.li-button {
+.buttons li {
+  display: inline-block;
+  list-style: none;
   margin-right: 40px;
+}
+
+.buttons a {
+  color: white;
 }
 
 
@@ -230,6 +246,9 @@ a {
   font-size: 24px;
 }
 
+.obi a {
+  color: white;
+}
 
 /* courses and purposes */
 /* tabs */
@@ -414,6 +433,10 @@ td:nth-child(odd), .second-td {
   font-size: 32px;
 }
 
+.inquiries-locations a {
+  color: white;
+}
+
 
 /* footer */
 footer {
@@ -428,11 +451,6 @@ footer {
 
 
 /* 汎用 */
-.li-horizontal {
-  display: inline-block;
-  list-style: none;
-}
-
 .row {
   display:flex;
   flex-direction: row;
