@@ -309,6 +309,7 @@ a {
 .cell {
   width: 532px;
   height: 374px;
+  /* overflow: hidden; */
 }
 
 .cell-left {
@@ -329,6 +330,10 @@ a {
   width: 532px;
   height: 329px;
   margin-bottom: 16px;
+}
+
+.courses-purposes img:hover {
+  transform: scale(1.2);
 }
 
 .cell p {
@@ -369,6 +374,45 @@ td:nth-child(odd), .second-td {
 
 .first-td, .second-td {
   background-color: #F5F5F5;
+}
+
+
+/* inquiries-locations */
+
+.inquiries-locations {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.inquiries-locations div {
+  position: relative;
+  flex: 1 1 50%; /* Each div takes up 50% of the container */
+  max-width: 50%; /* Ensures no div exceeds 50% of the container */
+}
+
+.inquiries-locations img {
+  width: 100%; /* Image fills the width of its parent div */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom space caused by inline-block images */
+}
+
+.inquiries-locations img:hover {
+  transform: scale(1.2);
+}
+
+.first-img {
+  border-right: solid 1px white;
+}
+
+.inquiries-locations p {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 32%;
+  font-size: 32px;
 }
 
 
