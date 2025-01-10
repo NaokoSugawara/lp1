@@ -31,7 +31,6 @@ nav {
   height: 101px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   padding: 20px;
   position: relative;
@@ -40,19 +39,28 @@ nav {
   overflow: hidden; /* Prevents margin collapse */
 }
 
-.company-name {
+@media screen and (max-width: 768px) {
+  nav {
+    height: 70px;
+  }
+}
+
+nav p {
   font-size: 32px;
-  /* width: 241px; */
   width: 261px;
   height: 45px;
+  display: flex;
+  align-items: center;
 }
 
-.company-name a {
+@media screen and (max-width: 768px) {
+  nav p {
+    font-size: 22px;
+  }
+}
+
+nav p a {
   color: #005BAC;
-}
-
-.header-content-inner{
-  margin-left: 158px;
 }
 
 .header-content-inner li {
@@ -61,12 +69,35 @@ nav {
   font-size: 20px;
 }
 
-.header-content-inner>li:not(:nth-child(4)){
+.header-content-inner li:not(:nth-child(4)){
   margin-right: 48px;
 }
 
 .header-content-inner a {
   color: #333333;
+}
+
+.hamburger {
+  width: 70px;
+  height: 70px;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #005BAC;
+  cursor: pointer;
+}
+
+.line {
+  width: 46%;
+  height: 5px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+.line:nth-child(3) {
+  margin-bottom: 0;
 }
 
 .setsumeikai {
@@ -79,6 +110,32 @@ nav {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+  .header-content-inner{
+    margin-left: 9%;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-content-inner{
+    display: none;
+  }
+  nav p {
+    margin-left: 10%;
+    text-align: left;
+  }
+  nav p a {
+    display: inline-block;
+  }
+}
+
+
 
 /* main */
 /* upper */
@@ -89,19 +146,19 @@ nav {
   position: relative;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .upper-left {
     position: absolute;
     top: 0;
-    left: 410px;
+    left: 31%;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .upper-left {
     position: absolute;
     top: 0;
-    left: 16px;
+    left: 10%;
   }
 }
 
@@ -111,22 +168,22 @@ nav {
   margin-bottom: 32px;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .bg-img {
     background-image: url(../image/mainVIsual_pc.jpg);
-    background-repeat: no-repeat;
     width: 100%;
-    height: 651px;
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .bg-img {
     background-image: url(../image/mainVIsual_sp.jpg);
     width: 100%;
     height: 250px;
-    background-size: cover; /* Ensures the image covers the entire element */
-    background-position: center; /* Centers the image */
+    background-position: center;
   }
 }
 
@@ -135,13 +192,13 @@ nav {
 }
 
 .no1 {
-  font-size: 54px;
+  font-size: 74px;
   margin: 0 auto;
   color: #F11F8D;
 }
 
 .no {
-  font-size: 38px;
+  font-size: 54px;
 }
 
 .geneki {
@@ -183,13 +240,30 @@ nav {
   color: white;
 }
 
-.buttons {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  bottom: -37.5px;
+
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: -37.5px;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: -37.5px;
+  }
+}
+
 
 .buttons li {
   display: inline-block;
