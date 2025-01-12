@@ -35,12 +35,19 @@
                 <li><button type="button" class="noto-sans-jp-bold setsumeikai">入学説明会に申し込む</button></li>
             </ul>
         </div>
-        <div class="hamburger">
+        <div id="hamburgerIcon" class="hamburger-icon">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
     </nav>
+    <ul id="dropdownList" class="dropdown-list">
+        <li class="noto-sans-jp-medium menu-item"><a href="#">➡　選ばれる3つの理由</a></li>
+        <li class="noto-sans-jp-medium menu-item"><a href="#">➡　コース・目的</a></li>
+        <li class="noto-sans-jp-medium menu-item"><a href="#">➡　費用</a></li>
+        <li><button type="button" class="noto-sans-jp-bold setsumeikai-sp">入学説明会に申し込む</button></li>
+    </ul>
+
 
     <!-- main -->
     <!-- Top Left -->
@@ -226,6 +233,9 @@
     </footer>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("dropdownList").style.display = "none";
+        });
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("grades").style.display = "block";
         });

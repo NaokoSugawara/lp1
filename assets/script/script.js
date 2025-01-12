@@ -1,3 +1,22 @@
+
+
+// Nav for SP
+// open the dropdown menu when hamburger icon is clicked
+
+const hamburgerIcon = document.getElementById('hamburgerIcon');
+hamburgerIcon.addEventListener('click', function() {
+  const dropdownList = document.getElementById('dropdownList');
+  if (dropdownList.style.display === 'none') {
+    dropdownList.style.display = 'block';
+  } else {
+    dropdownList.style.display = 'none';
+  }
+});
+
+
+
+// Courses and Purposes
+// switch content depends on the tab clicked
 function openContent(event, choice) {
 
   // Get all elements with class="tabcontent" and hide them
@@ -16,3 +35,5 @@ function openContent(event, choice) {
   document.getElementById(choice).style.display = "block";
   event.currentTarget.className += " active";
 }
+
+
