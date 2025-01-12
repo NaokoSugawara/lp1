@@ -39,10 +39,8 @@ nav {
   overflow: hidden; /* Prevents margin collapse */
 }
 
-@media screen and (max-width: 768px) {
-  nav {
-    height: 70px;
-  }
+nav+div {
+  display: inline-block;
 }
 
 nav p {
@@ -52,12 +50,6 @@ nav p {
   display: flex;
   align-items: center;
   margin: 0;
-}
-
-@media screen and (max-width: 768px) {
-  nav p {
-    font-size: 22px;
-  }
 }
 
 nav p a {
@@ -81,7 +73,9 @@ nav p a {
 .hamburger {
   width: 70px;
   height: 70px;
-  margin-right: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,11 +118,16 @@ nav p a {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    height: 70px;
+    justify-content: space-between;
+  }
   .header-content-inner{
     display: none;
   }
   nav p {
     text-align: left;
+    font-size: 32px;
   }
   nav p a {
     display: inline-block;
@@ -431,6 +430,24 @@ nav p a {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    margin: 20px 0 10px;
+    text-align: center;
+    line-height: 2;
+  }
+}
+
+
 
 
 /* courses and purposes */
@@ -634,20 +651,16 @@ td:nth-child(odd), .second-td {
 .inquiries-locations {
   width: 100%;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .inquiries-locations div {
   position: relative;
-  flex: 1 1 50%; /* Each div takes up 50% of the container */
-  max-width: 50%; /* Ensures no div exceeds 50% of the container */
   overflow: hidden
 }
 
 .inquiries-locations img {
-  width: 100%; /* Image fills the width of its parent div */
-  height: auto; /* Maintains aspect ratio */
+  width: 100%;
+  height: auto;
   display: block; /* Removes bottom space caused by inline-block images */
 }
 
@@ -655,15 +668,11 @@ td:nth-child(odd), .second-td {
   transform: scale(1.2);
 }
 
-.first-img {
-  border-right: solid 1px white;
-}
-
 .inquiries-locations p {
   position: absolute;
   text-align: center;
   color: white;
-  top: 50%;
+  top: 42%;
   left: 32%;
   font-size: 32px;
 }
@@ -671,6 +680,40 @@ td:nth-child(odd), .second-td {
 .inquiries-locations a {
   color: white;
 }
+
+@media screen and (min-width: 768px) {
+  .inquiries-locations div {
+    flex: 1 1 50%; /* Each div takes up 50% of the container */
+    max-width: 50%; /* Ensures no div exceeds 50% of the container */
+  }
+  .first-img {
+    border-right: solid 1px white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inquiries-locations {
+    flex-direction: column;
+  }
+  /* .switch {
+    width: 420px;
+    height: 170px;
+    background-image: url("../image/pht_qa_sp.png");
+  }
+  .switch img, .switch p {
+    display: none;
+  } */
+  .inquiries-locations p {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 40%;
+    left: 4%;
+    font-size: 22px;
+  }
+}
+
+
 
 
 /* footer */
