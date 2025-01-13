@@ -126,7 +126,7 @@ nav p a {
 }
 
 .dropdown-list li:last-child {
-  text-align: center;
+  text-align: center;18px
   margin-top: 32px;
   margin-bottom: 32px;
   list-style: none;
@@ -490,8 +490,12 @@ nav p a {
   font-size: 24px;
 }
 
-.obi a {
+.setsumeikai a {
   color: white;
+}
+
+.pc {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -633,6 +637,9 @@ nav p a {
 @media screen and (max-width: 768px) {
   .courses-purposes-inner {
     width: 90%;
+  }
+  .tabs li {
+    font-size: 18px;
   }
   .ichigyou {
     flex-direction: column;
