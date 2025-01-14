@@ -16,6 +16,9 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.6;
+}
 
 
 /* header */
@@ -26,6 +29,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
   padding: 20px;
   position: relative;
   z-index: 1;
