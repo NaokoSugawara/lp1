@@ -9,15 +9,8 @@
 }
 
 html {
-  /* width: 1920px; */
   scroll-behavior: smooth;
 }
-
-/*
-img {
-  display: block;
-  width: 100%;
-} */
 
 a {
   text-decoration: none;
@@ -31,6 +24,7 @@ nav {
   height: 101px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   position: relative;
@@ -39,21 +33,23 @@ nav {
   overflow: hidden; /* Prevents margin collapse */
 }
 
-nav+div {
-  display: inline-block;
-}
-
 nav p {
-  font-size: 32px;
   width: 261px;
   height: 45px;
   display: flex;
   align-items: center;
   margin: 0;
+  font-size: 32px;
 }
 
 nav p a {
   color: #005BAC;
+}
+
+.header-content-inner ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header-content-inner li {
@@ -68,6 +64,16 @@ nav p a {
 
 .header-content-inner a {
   color: #333333;
+}
+
+.setsumeikai {
+  width: 282px;
+  height: 61px;
+  border-radius: 9999px;
+  border: none;
+  background: linear-gradient(to right, #0271E0, #53A2F0);
+  font-size: 20px;
+  color: white;
 }
 
 .hamburger-icon {
@@ -95,16 +101,6 @@ nav p a {
   margin-bottom: 0;
 }
 
-.setsumeikai {
-  width: 282px;
-  height: 61px;
-  border-radius: 9999px;
-  border: none;
-  background: linear-gradient(to right, #0271E0, #53A2F0);
-  font-size: 20px;
-  color: white;
-}
-
 .dropdown-list {
   background-color: #005BAC;
   width: 100%;
@@ -113,7 +109,7 @@ nav p a {
   position: absolute;
   top: 70px;
   right: 0;
-  z-index: 100;
+  z-index: 2;
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
@@ -126,7 +122,7 @@ nav p a {
 }
 
 .dropdown-list li:last-child {
-  text-align: center;18px
+  text-align: center;
   margin-top: 32px;
   margin-bottom: 32px;
   list-style: none;
@@ -158,6 +154,9 @@ nav p a {
     margin-left: 9%;
   }
   .hamburger-icon {
+    display: none;
+  }
+  .dropdown-list {
     display: none;
   }
 }

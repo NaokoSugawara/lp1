@@ -1,7 +1,7 @@
 
 
 // Nav for SP
-// open the dropdown menu when hamburger icon is clicked
+// open dropdown menu when hamburger icon is clicked
 
 const hamburgerIcon = document.getElementById('hamburgerIcon');
 hamburgerIcon.addEventListener('click', function() {
@@ -13,6 +13,12 @@ hamburgerIcon.addEventListener('click', function() {
   }
 });
 
+
+// close dropdown menu when windowsize is changed
+window.addEventListener('resize', () => {
+  const dropdownList = document.getElementById('dropdownList');
+  dropdownList.style.display = "none";
+})
 
 
 // Courses and Purposes
