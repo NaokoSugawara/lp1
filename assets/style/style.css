@@ -329,6 +329,7 @@ nav p a {
     position: absolute;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     bottom: -37.5px;
   }
