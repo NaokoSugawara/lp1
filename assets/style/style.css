@@ -198,6 +198,7 @@ nav p a {
 .upper-img-text {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .goukaku-jisseki {
@@ -243,10 +244,19 @@ nav p a {
     background-position: center;
     background-repeat: no-repeat;
   }
+  .upper-left-outer {
+    width: 100%;
+    height: 650px;
+    max-width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
   .upper-left {
     position: absolute;
     top: 15%;
-    left: 25%;
+    left: 0;
   }
 }
 
@@ -257,6 +267,13 @@ nav p a {
     height: 250px;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  .upper-left-outer {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .upper-left {
     position: absolute;
