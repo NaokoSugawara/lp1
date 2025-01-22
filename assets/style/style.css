@@ -740,6 +740,10 @@ td:nth-child(odd), .second-td {
   background-color: #F5F5F5;
 }
 
+.price span {
+  font-size: 18px;
+}
+
 @media screen and (max-width: 768px) {
   .tuitions-inner {
     width: 90%;
