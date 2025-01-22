@@ -667,6 +667,11 @@ nav p a {
   text-align: left;
 }
 
+.cell p img {
+  width: 17.31px;
+  height: 15px;
+}
+
 @media screen and (max-width: 767px) {
   .courses-purposes-inner {
     width: 90%;
