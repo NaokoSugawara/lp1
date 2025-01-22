@@ -615,8 +615,6 @@ nav p a {
   width: 100%;
   margin: 0 auto;
   display: none;
-  /* display: flex; */
-  /* justify-content: center; */
   background-color: #F2F9FF;
 }
 
@@ -624,10 +622,7 @@ nav p a {
   width: auto;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
   justify-content: center;
-  /* padding-left: 32px;
-  padding-right: 32px; */
 }
 
 .first-line {
@@ -635,8 +630,6 @@ nav p a {
 }
 
 .cell {
-  /* width: 532px;
-  height: 374px; */
   width: 50%;
   height: auto;
 }
@@ -659,8 +652,6 @@ nav p a {
 }
 
 .cell img {
-  /* width: 532px;
-  height: 329px; */
   width: 100%;
   height: auto;
 }
@@ -721,8 +712,6 @@ nav p a {
 }
 
 table {
-  /* width: 600px;
-  height: 545px; */
   width: 31%;
   height: auto;
   border-collapse:  collapse;
@@ -809,14 +798,6 @@ td:nth-child(odd), .second-td {
   .inquiries-locations {
     flex-direction: column;
   }
-  /* .switch {
-    width: 420px;
-    height: 170px;
-    background-image: url("../image/pht_qa_sp.png");
-  }
-  .switch img, .switch p {
-    display: none;
-  } */
   .inquiries-locations p {
     position: absolute;
     text-align: center;
