@@ -116,7 +116,7 @@ nav p a {
   margin-bottom: 0;
 }
 
-.dropdown-list {
+.header--dropdown {
   background-color: #005BAC;
   width: 100%;
   height: auto;
@@ -128,7 +128,7 @@ nav p a {
   transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.menu-item {
+.header--dropdown-item {
   height: 70px;
   padding: 20px 20px 0 0;
   font-size: 18px;
@@ -136,7 +136,7 @@ nav p a {
   list-style: none;
 }
 
-.dropdown-list li:last-child {
+.header--dropdown li:last-child {
   text-align: center;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -156,7 +156,7 @@ nav p a {
   color: #005BAC;
 }
 
-.menu-item a {
+.header--dropdown-item a {
   display: flex;
   align-items: center;
   color: #fff;
@@ -174,7 +174,7 @@ nav p a {
   .hamburger-icon {
     display: none;
   }
-  .dropdown-list {
+  .header--dropdown {
     display: none;
   }
 }
@@ -195,6 +195,8 @@ nav p a {
     display: inline-block;
   }
 }
+
+
 
 
 
