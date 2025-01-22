@@ -580,6 +580,10 @@ nav p a {
   text-align: center;
 }
 
+.courses-purposes-inner2 {
+  width: 60%;
+}
+
 /* tabs */
 .tabs{
   width: 100%;
@@ -592,7 +596,7 @@ nav p a {
 .tabs li {
   width: 49%;
   height: auto;
-  border-radius: 5px 5px 0 0;
+  border-radius: 15px 15px 0 0;
   background-color: #F0F0F0;
   display: flex;
   align-items: center;
@@ -604,10 +608,10 @@ nav p a {
 }
 
 .first-tab {
-  margin-right: 35px;
+  margin-right: 18px;
 }
 
-.tab.active {
+.tabs .active {
   background-color: #F2F9FF;
   opacity: 1;
 }
@@ -676,6 +680,9 @@ nav p a {
   .courses-purposes-inner {
     width: 90%;
   }
+  .courses-purposes-inner2 {
+    width: 99%;
+  }
   .tabs li {
     font-size: 18px;
   }
@@ -687,7 +694,7 @@ nav p a {
     padding-top: 0;
   }
   .cell {
-    width: 100%;
+    width: 93%;
   }
   .cell div {
     margin-bottom: 16px;

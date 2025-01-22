@@ -39,6 +39,7 @@ function openContent(event, choice) {
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(choice).style.display = "block";
+  console.log(event.currentTarget)
   event.currentTarget.className += " active";
 }
 
