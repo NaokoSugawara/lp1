@@ -179,7 +179,7 @@ nav p a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   nav {
     height: 70px;
     justify-content: space-between;
@@ -276,7 +276,7 @@ nav p a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .bg-img {
     background-image: url(../image/mainVIsual_sp.jpg);
     width: 100%;
@@ -370,7 +370,7 @@ nav p a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .upper {
     flex-direction: column;
   }
@@ -438,7 +438,7 @@ nav p a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .three-reasons-boxes {
     width: 80%;
     height: auto;
@@ -491,7 +491,7 @@ nav p a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subjects {
     font-size: 28px;
     margin-top: 24px;
@@ -552,7 +552,7 @@ nav p a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .pc {
     display: none;
   }
@@ -667,7 +667,7 @@ nav p a {
   text-align: left;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .courses-purposes-inner {
     width: 90%;
   }
@@ -744,7 +744,7 @@ td:nth-child(odd), .second-td {
   font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .tuitions-inner {
     width: 90%;
   }
@@ -800,7 +800,7 @@ td:nth-child(odd), .second-td {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .inquiries-locations {
     flex-direction: column;
   }
@@ -820,7 +820,7 @@ td:nth-child(odd), .second-td {
 /* footer */
 footer {
   height: 120px;
-  background-color: #FFEDED;
+  background-color: #DDDDDD;
   font-size: 13px;
   display: flex;
   justify-content: center;
