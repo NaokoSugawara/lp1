@@ -38,7 +38,6 @@ nav {
 }
 
 nav p {
-
   height: 45px;
   display: flex;
   align-items: center;
@@ -70,7 +69,8 @@ nav p a img {
 .header-content-inner li {
   display: inline-block;
   list-style: none;
-  font-size: 20px;
+  font-size: 20px; 
+  /* font-size: calc(2.4rem, calc(2.2rem + 0.625vw), 2.9rem); */
 }
 
 .header-content-inner li:not(:nth-child(4)){
