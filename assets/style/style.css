@@ -38,7 +38,7 @@ nav {
 }
 
 nav p {
-  width: 261px;
+
   height: 45px;
   display: flex;
   align-items: center;
@@ -47,7 +47,18 @@ nav p {
 }
 
 nav p a {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  height: auto; 
   color: #005BAC;
+}
+
+nav p a img {
+  max-width: 100%; /* Ensure the image resizes properly */
+  max-height: 100%; /* Prevents overflow */
+  object-fit: contain; /* Adjusts image aspect ratio */
 }
 
 .header-content-inner ul {
@@ -168,6 +179,14 @@ nav p a {
   nav {
     justify-content: center;
   }
+  .logo-sp {
+    display: none;
+  }
+  nav p {
+    width: 15%;
+    min-width: 250px;
+    padding-left: 5%;
+  }
   .header-content-inner{
     margin-left: 9%;
   }
@@ -183,6 +202,9 @@ nav p a {
   nav {
     height: 70px;
     justify-content: space-between;
+  }
+  .logo-pc {
+    display: none;
   }
   .header-content-inner{
     display: none;
@@ -413,8 +435,10 @@ nav p a {
 
 .reason {
   width: 60%;
+  min-width: 700px;
   display: flex;
   justify-content: space-around;
+  /* justify-content: flex-start; */
 }
 
 .three-reasons-boxes {
@@ -429,6 +453,10 @@ nav p a {
 
 .three {
   color: #F11F8D;
+}
+
+.three-reasons img {
+  height: auto;
 }
 
 @media screen and (mix-width: 768px) {
